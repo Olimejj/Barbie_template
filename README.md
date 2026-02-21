@@ -1,79 +1,65 @@
 # The Barbie Movie Project (Python)
 
 ## Introduction
-Welcome to the Barbie Movie Adventure! Step into the captivating world of Barbieland, where Barbie and Ken are about to embark on an extraordinary journey that blends beauty, bravery, and a touch of magic.
 
-In this Python project, you'll code and solve **three challenges** that mirror key moments in Barbie and Ken’s journey. Your job is to complete the code inside the provided Python file and make sure your output matches the example formatting.
+Welcome to the Barbie Movie Adventure!
+
+In this Python project, you will step into the world of Barbieland and complete three programming challenges inspired by key moments in Barbie and Ken’s journey. Each challenge focuses on applying core programming skills including input handling, calculations, formatting output, and logical decision-making.
+
+This assignment also introduces you to using VS Code Tasks to automate setup and testing.
 
 ---
 
-## What You Will Do
-You will complete **three challenges** in `barbie.py`:
+## What You Are Required To Do
+
+You must complete the missing code inside `barbie.py`.
+
+There are three challenges:
 
 ### 1) Beach Adventure Challenge
-Help Barbie and Ken manage their expenses for a day at the beach.  
-You will calculate:
-- total cost before discounts  
-- total cost after discounts  
-- each person's share  
+You will:
+- Prompt the user for input
+- Calculate total cost before discounts
+- Apply discounts
+- Calculate the new total
+- Determine each person’s share
 
 ### 2) Escape Plan Challenge
-Assist Barbie, Ken, and Gloria in devising an escape plan.  
-You will calculate:
-- time required for each route  
-- which route is fastest  
-- time saved by choosing the fastest route  
+You will:
+- Calculate time required for three routes
+- Determine the fastest route
+- Calculate time saved compared to the slowest route
 
 ### 3) Societal Reformation Challenge
-Help Barbie reform society in Barbieland.  
-You will calculate:
-- success rate of proposed changes  
-- how many additional changes are needed to reach a 75% success rate  
-- remaining changes to be implemented  
+You will:
+- Calculate the success rate of proposed changes
+- Determine how many more changes are needed to reach 75%
+- Calculate remaining changes
 
 ---
 
-## Files in This Repository
-- **`barbie.py`** → This is the file you edit and submit.
-- **`tests_public/`** → Public tests you can run locally to check your output.
-- **`.vscode/tasks.json`** → VS Code tasks (one-click setup + run + tests).
-- **`requirements.txt`** → Python packages needed for testing (currently just `pytest`).
+## Important Rules
+
+- Do NOT rename the functions.
+- Required output lines must match the example formatting exactly.
+- Extra print statements are allowed.
+- You must push your final code to GitHub.
 
 ---
 
-## Required Output Formatting
-Your output must include the same formatted result lines as the example.  
-**Extra output is allowed**, but the required lines must appear exactly.
+## Example Required Output Formatting
 
----
-
-## Example Input and Output Values
+Your program must include output lines formatted like these:
 
 ### Beach Adventure Challenge
-**Example Inputs**
-- Number of people: `4`
-- Beach Chairs Cost: `$30.00`
-- Sunscreen Cost: `$10.00`
-- Ice Cream Cost: `$5.00`
-- Beach Toys Cost: `$15.00`
 
-**Expected Result Lines**
 Challenge 1 Results:
 Total cost before discounts: $60.00
 Total cost after discounts: $53.50
 Each person's share: $13.38
 
-
 ### Escape Plan Challenge
-**Example Inputs**
-- Route 1 Distance: `100` miles
-- Route 1 Speed: `50` mph
-- Route 2 Distance: `120` miles
-- Route 2 Speed: `70` mph
-- Route 3 Distance: `140` miles
-- Route 3 Speed: `60` mph
 
-**Expected Result Lines**
 Challenge 2 Results:
 Time required for Route 1: 2.00 hours
 Time required for Route 2: 1.71 hours
@@ -82,11 +68,7 @@ The fastest route takes 1.71 hours.
 Time saved by choosing the fastest route: 0.62 hours
 
 ### Societal Reformation Challenge
-**Example Inputs**
-- Total Proposed Changes: `20`
-- Successful Changes: `13`
 
-**Expected Result Lines**
 Challenge 3 Results:
 Percentage of successful changes: 65.00%
 Number of additional changes needed to achieve a 75% success rate: 2
@@ -96,66 +78,105 @@ Remaining changes to be implemented: 7
 
 ## Using VS Code Tasks (Required)
 
-This assignment is also an introduction to using **VS Code Tasks**. Tasks give you one-click commands for setting up your environment and running tests.
+This assignment introduces you to using VS Code Tasks to automate common development steps.
 
-### Step 1: Install the Tasks extension (if needed)
-Most versions of VS Code already support Tasks by default.  
-If you do not see Tasks working, install:
+We are using the extension:
 
-**Extension name:** `Task Explorer` (publisher: *spmeesseman*)  
-This makes Tasks easier to find and run.
+VSCode Tasks in Sidebar  
+Publisher: iulian-radu-at  
 
-### Step 2: How to run Tasks
-In VS Code, use one of these:
+If you do not see the Tasks icon in the left sidebar:
 
-**Option A (recommended):**
-- Press **Ctrl+Shift+P** (Windows) or **Cmd+Shift+P** (Mac)
-- Type: **Tasks: Run Task**
-- Choose the task you want
-
-**Option B (Task Explorer extension):**
-- Open the Task Explorer sidebar
-- Click the task name to run it
-
-### What the Tasks Do
-Your repo includes these tasks:
-
-1. **Run - Program**
-   - Runs your `barbie.py` program so you can test it normally.
-
-2. **Setup - Create venv (.venv)**
-   - Creates a Python virtual environment in a folder named `.venv`
-
-3. **Setup - Install requirements**
-   - Installs the packages listed in `requirements.txt` into your virtual environment
-
-4. **Run - Public Tests**
-   - Runs the included public tests to check for required output lines
-
-**Recommended workflow:**
-1) Run **Run - Program** first (manual testing)  
-2) Then run **Run - Public Tests** (automatic check)  
+1. Open Extensions (Ctrl+Shift+X or Cmd+Shift+X)
+2. Search for: VSCode Tasks in Sidebar
+3. Install the extension
 
 ---
 
-## Report Outline (Required)
-Write a short report (about **half a page**) that includes:
+## How to Run Tasks
 
-- A short description, in your own words, of what you were required to do (1–2 sentences)
-- The challenges you faced when completing the project
-- The concepts you learned from the project
-- Any resources/people that helped you
+1. Click the Tasks icon in the left sidebar.
+2. You will see a list of available tasks.
+3. Click a task to run it.
 
-**Format:**  
-- You may either **upload** your report as a file **OR** submit it as a **text entry** (no PDF required).
+You do NOT need to type commands manually.
+
+---
+
+## Tasks (In Order)
+
+### 1) Setup - Create venv (.venv)
+
+Creates a Python virtual environment for this project in a folder named `.venv`.
+This keeps your project dependencies isolated from other Python projects.
+You typically only need to run this once.
+
+### 2) Setup - Install requirements
+
+Installs the Python packages listed in `requirements.txt` into your virtual environment.
+For this project, it installs `pytest`, which is used for running public tests.
+Run this after creating the virtual environment.
+
+### 3) Run - Program
+
+Runs your `barbie.py` file.
+Use this to manually test your program by entering input values.
+
+### 4) Run - Public Tests
+
+Runs the provided public tests located in `tests_public/`.
+These tests check that required output lines appear correctly.
+Always run this before submitting.
+
+---
+
+## Recommended Workflow
+
+1. Setup - Create venv (.venv)
+2. Setup - Install requirements
+3. Run - Program
+4. Run - Public Tests
+5. Commit and push your code to GitHub
+
+---
+
+## Report (Required)
+
+Write a short report (about half a page) that includes:
+
+- A short description (1–2 sentences) of what the project required
+- Challenges you faced while completing it
+- Concepts you learned
+- Resources or people that helped you
+
+You may submit your report as:
+- A text entry  
+OR
+- An uploaded document  
+
+A PDF is NOT required.
 
 ---
 
 ## Submission
-You will submit:
 
-1) **A link to your GitHub assignment repository** (this repo)  
-2) Your **report** (upload or text entry)
+You must submit:
 
-Make sure your final code is pushed to GitHub.
+1) A link to your GitHub assignment repository  
+2) Your report  
 
+Make sure your final code has been pushed to GitHub before submitting.
+
+---
+
+## Final Reminder
+
+This assignment introduces:
+- Input handling
+- Arithmetic calculations
+- Conditional logic
+- Output formatting
+- Virtual environments
+- Automated testing with VS Code Tasks
+
+Take your time, test carefully, and make sure your formatting matches the example exactly.

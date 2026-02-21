@@ -182,7 +182,6 @@ You may submit your report as:
 OR
 - An uploaded document  
 
-A PDF is NOT required.
 
 ---
 

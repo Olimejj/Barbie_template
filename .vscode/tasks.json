@@ -1,0 +1,38 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "1) Setup - Create venv (.venv)",
+      "type": "shell",
+      "command": "python3 -m venv .venv",
+      "problemMatcher": [],
+      "windows": { "command": "py -3 -m venv .venv" }
+    },
+    {
+      "label": "2) Setup - Install requirements",
+      "type": "shell",
+      "dependsOn": "1) Setup - Create venv (.venv)",
+      "command": ".venv/bin/python -m pip install --upgrade pip && .venv/bin/python -m pip install -r requirements.txt",
+      "problemMatcher": [],
+      "windows": {
+        "command": ".\\.venv\\Scripts\\python.exe -m pip install --upgrade pip && .\\.venv\\Scripts\\python.exe -m pip install -r requirements.txt"
+      }
+    },
+    {
+      "label": "4) Run - Public Tests",
+      "type": "shell",
+      "dependsOn": "2) Setup - Install requirements",
+      "command": ".venv/bin/python -m pytest -q tests_public",
+      "problemMatcher": [],
+      "windows": { "command": ".\\.venv\\Scripts\\python.exe -m pytest -q tests_public" }
+    },
+    {
+      "label": "3) Run - Program",
+      "type": "shell",
+      "dependsOn": "1) Setup - Create venv (.venv)",
+      "command": ".venv/bin/python barbie.py",
+      "problemMatcher": [],
+      "windows": { "command": ".\\.venv\\Scripts\\python.exe barbie.py" }
+    }
+  ]
+}
